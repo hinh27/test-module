@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var toan = Number(prompt(" Nhập điểm toán: "));
+    var van = Number(prompt("Nhập điểm văn: "));
+    var tienganh = Number(prompt("Nhập điểm tiếng anh: "));
+    var ĐTB = (toan*2 + van + tienganh *2)/5;
+    if (toan>10 || van>10 || tienganh>10||van<0||toan<0||tienganh<0)
+        alert("nhập lại");
+    else if (0<ĐTB<5)
+        document.write("Không Đạt");
+    else if (5 <= ĐTB < 7.5)
+        document.write("Đạt");
+    else if (7.6 <= ĐTB < 8.5)
+        document.write("Khá");
+    else if (8.5 <= ĐTB < 10)
+        document.write("Tốt");
+
+</script>
+</body>
+</html>
